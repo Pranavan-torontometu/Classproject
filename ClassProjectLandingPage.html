@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranavan's Portfolio</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Landing Page Background */
+        body {
+            background: linear-gradient(to bottom, #1e1e1e, #2a2a2a);
+            color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Centered Container */
+        .landing-container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+            .landing-container h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                color: #6ec1e4;
+            }
+
+            .landing-container p {
+                font-size: 20px;
+                margin-bottom: 30px;
+                color: #ddd;
+            }
+
+        /* Continue Button */
+        .continue-button {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: #6ec1e4;
+            color: #1e1e1e;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+            .continue-button:hover {
+                background-color: #9bdaf0;
+                transform: scale(1.1);
+            }
+
+            .continue-button i.arrow {
+                display: inline-block;
+                margin-left: 10px;
+                border: solid #1e1e1e;
+                border-width: 0 3px 3px 0;
+                padding: 5px;
+                transform: rotate(45deg);
+                transition: transform 0.3s ease;
+            }
+
+            .continue-button:hover i.arrow {
+                transform: rotate(45deg) translate(5px, -5px);
+            }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <h1>Welcome to Pranavan's Portfolio</h1>
+        <p>Click below to continue</p>
+        <a href="classproject.html" class="continue-button">
+            <span>Continue</span>
+            <i class="arrow"></i>
+        </a>
+    </div>
+</body>
+</html>
